@@ -1,0 +1,31 @@
+// Desktop and TV
+.popular-media {
+  max-width: 100%;
+  margin: 2.5vw auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+// Tablet (Portrait Mode)
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .popular-media {
+    margin: 4.5vw auto 3vw;
+    flex-direction: column;
+  }
+}
+
+// Mobile (Landscape Mode)
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .popular-media {
+    margin: 4.5vw auto 10vw;
+    flex-direction: column;
+  }
+}
+
+// Mobile (Portrait Mode)
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .popular-media {
+    margin: 4.5vw auto 20vw;
+    flex-direction: column;
+  }
+}

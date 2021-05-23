@@ -1,0 +1,61 @@
+// Desktop and TV
+header {
+  width: 92%;
+  margin: 1.25vw auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+// Tablet (Landscape Mode)
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  header {
+    width: 95%;
+  }
+}
+
+// Tablet (Portrait Mode)
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  header {
+    position: fixed;
+    top: 20vw;
+    padding: 2vw 0;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--background-secondary);
+    flex-direction: column;
+    z-index: 15;
+    display: none;
+  }
+}
+
+// Mobile (Landscape Mode)
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  header {
+    position: fixed;
+    top: 14vw;
+    padding: 1.25vw 0;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--background-secondary);
+    flex-direction: column;
+    z-index: 15;
+    display: none;
+  }
+}
+
+// Mobile (Portrait Mode)
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  header {
+    position: fixed;
+    top: 24vw;
+    padding: 4vw 0;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--background-secondary);
+    flex-direction: column;
+    z-index: 15;
+    display: none;
+  }
+}

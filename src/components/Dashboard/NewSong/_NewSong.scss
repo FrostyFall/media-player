@@ -1,0 +1,157 @@
+// Desktop and TV
+.new-releases .preview-container .song-container {
+  width: 19.25%;
+  transition: transform 0.2s;
+  cursor: default;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.song-container .error-cover {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background-color: #b60000;
+  border-radius: 0.35vw;
+  position: relative;
+  cursor: pointer;
+}
+
+.song-container .loading-cover {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 0.35vw;
+  position: relative;
+  cursor: pointer;
+  animation: pulse 2s forwards infinite;
+}
+
+.song-container .song-cover {
+  width: 100%;
+  border-radius: 0.35vw;
+  position: relative;
+  cursor: pointer;
+  img {
+    width: 100%;
+    border-radius: 0.35vw;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    height: 25%;
+    width: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: opacity 0.2s;
+    z-index: 6;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 1.5%;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 0.35vw;
+    transition: opacity 0.2s;
+    z-index: 5;
+  }
+  &:hover::after,
+  &:hover::before {
+    opacity: 1;
+  }
+}
+
+.song-container h3 {
+  font-size: calc(0.95vw + 0.1rem);
+  margin-top: 0.33em;
+  color: var(--text-secondary);
+}
+
+.song-container h4 {
+  font-size: calc(0.85vw + 0.1rem);
+  color: var(--text-dark);
+}
+
+// Tablet (Landscape Mode)
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  .new-releases .preview-container .song-container {
+    width: 23%;
+    display: inline-block;
+    &:not(:first-of-type) {
+      margin-left: 0.8vw;
+    }
+  }
+
+  .song-container h3 {
+    font-size: calc(1.25vw + 0.1rem);
+  }
+
+  .song-container h4 {
+    font-size: calc(1.15vw + 0.1rem);
+  }
+}
+
+// Tablet (Portrait Mode)
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .new-releases .preview-container .song-container {
+    width: 37%;
+    display: inline-block;
+    &:not(:first-of-type) {
+      margin-left: 1.75%;
+    }
+  }
+
+  .song-container h3 {
+    font-size: calc(2.8vw + 0.1rem);
+  }
+
+  .song-container h4 {
+    font-size: calc(2.2vw + 0.1rem);
+  }
+}
+
+// Mobile (Landscape Mode)
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .new-releases .preview-container .song-container {
+    width: 25%;
+    display: inline-block;
+    &:not(:first-of-type) {
+      margin-left: 1.25%;
+    }
+  }
+
+  .song-container h3 {
+    font-size: calc(2vw + 0.1rem);
+  }
+
+  .song-container h4 {
+    font-size: calc(1.5vw + 0.1rem);
+  }
+}
+
+// Mobile (Portrait Mode)
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .new-releases .preview-container .song-container {
+    width: 40%;
+    display: inline-block;
+    &:not(:first-of-type) {
+      margin-left: 2%;
+    }
+  }
+
+  .song-container h3 {
+    font-size: calc(3vw + 0.1rem);
+  }
+
+  .song-container h4 {
+    font-size: calc(2.4vw + 0.1rem);
+  }
+}

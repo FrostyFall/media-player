@@ -1,0 +1,283 @@
+// Desktop and TV
+aside {
+  background-color: var(--background-secondary);
+  width: 20%;
+  .aside-container {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  .aside-container > h1 {
+    display: inline-block;
+    text-decoration: none;
+    font-size: calc(1.15vw + 0.1rem);
+    margin: 2.5vw 0 0 3.75vw;
+    color: var(--primary-color);
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    cursor: default;
+  }
+  .main-nav {
+    width: 100%;
+  }
+  .main-nav ul,
+  .my-music-nav ul {
+    list-style-type: none;
+  }
+  h2 {
+    font-size: calc(0.9vw + 0.1rem);
+    color: var(--text-dark);
+    margin-left: 3.6em;
+    margin-top: 2.5em;
+    cursor: default;
+    margin-bottom: 0.95em;
+  }
+  h2:first-of-type {
+    margin-top: 6.5em;
+  }
+  .search-icon {
+    display: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+}
+
+// Tablet (Landscape Mode)
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  aside {
+    width: 24%;
+    .aside-container > h1 {
+      font-size: calc(1.5vw + 0.1rem);
+    }
+    h2 {
+      font-size: calc(1.1vw + 0.1rem);
+      margin-left: 3em;
+    }
+    h2:first-of-type {
+      margin-top: 5.5em;
+    }
+  }
+}
+
+// Tablet (Portrait Mode)
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  aside {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 11vw;
+    z-index: 10;
+  }
+
+  aside .aside-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      font-size: calc(4vw + 0.1rem);
+    }
+  }
+
+  aside .aside-container nav {
+    background-color: var(--background-secondary);
+    position: fixed;
+    top: 10vw;
+    left: 0;
+    right: 0;
+    height: 11vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  aside .aside-container .main-nav {
+    width: 66%;
+  }
+
+  aside .aside-container .main-nav ul {
+    width: 100%;
+    display: flex;
+  }
+
+  aside .aside-container .my-music-nav {
+    width: 33%;
+  }
+
+  aside .aside-container h2 {
+    display: none;
+  }
+
+  aside .aside-container .search-icon {
+    display: block;
+    img {
+      width: 4vw;
+    }
+  }
+
+  aside .aside-container .menu-icon {
+    display: block;
+    img {
+      width: 5vw;
+    }
+  }
+}
+
+// Mobile (Landscape Mode)
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  aside {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 9vw;
+    z-index: 10;
+  }
+
+  aside .aside-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      font-size: calc(3vw + 0.1rem);
+    }
+  }
+
+  aside .aside-container nav {
+    background-color: var(--background-secondary);
+    position: fixed;
+    top: 8vw;
+    left: 0;
+    right: 0;
+    height: 6.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  aside .aside-container .main-nav {
+    width: 66%;
+  }
+
+  aside .aside-container .main-nav ul {
+    width: 100%;
+    display: flex;
+  }
+
+  aside .aside-container .my-music-nav {
+    width: 33%;
+  }
+
+  aside .aside-container h2 {
+    display: none;
+  }
+
+  aside .aside-container .search-icon {
+    display: block;
+    img {
+      width: 3.5vw;
+    }
+  }
+
+  aside .aside-container .menu-icon {
+    display: block;
+    img {
+      width: 4.5vw;
+    }
+  }
+}
+
+// Mobile (Portrait Mode)
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  aside {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 15vw;
+    z-index: 10;
+  }
+
+  aside .aside-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      font-size: calc(5vw + 0.1rem);
+    }
+  }
+
+  aside .aside-container nav {
+    background-color: var(--background-secondary);
+    position: fixed;
+    top: 14vw;
+    left: 0;
+    right: 0;
+    height: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  aside .aside-container .main-nav {
+    width: 66%;
+  }
+
+  aside .aside-container .main-nav ul {
+    width: 100%;
+    display: flex;
+  }
+
+  aside .aside-container .my-music-nav {
+    width: 33%;
+  }
+
+  aside .aside-container h2 {
+    display: none;
+  }
+
+  aside .aside-container .search-icon {
+    display: block;
+    img {
+      width: 5.25vw;
+    }
+  }
+
+  aside .aside-container .menu-icon {
+    display: block;
+    img {
+      width: 6.5vw;
+    }
+  }
+}

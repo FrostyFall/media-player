@@ -1,0 +1,128 @@
+// Desktop and TV
+.rec-video {
+  position: relative;
+  background-color: var(--box-color);
+  border-radius: 0.35vw;
+  width: 32.5%;
+  padding: 0.6vw;
+  color: var(--text-secondary);
+  cursor: pointer;
+  span {
+    position: absolute;
+    background-color: var(--background-dark);
+    top: 1vw;
+    left: 1vw;
+    font-size: calc(0.8vw + 0.1rem);
+    padding: 0.25vw 0.5vw;
+    border-radius: 0.35vw;
+  }
+  video {
+    border-radius: 0.35vw;
+  }
+  .video-info {
+    margin: 0.5vw 0 0.3vw;
+  }
+  .video-info h3 {
+    font-size: calc(1vw + 0.1rem);
+    margin-bottom: 0.2vw;
+  }
+  .video-info h4 {
+    color: var(--text-dark);
+    font-size: calc(0.8vw + 0.1rem);
+  }
+}
+
+.rec-video.loading video {
+  animation: pulse 2s forwards infinite;
+}
+
+.rec-video.error video {
+  background-color: rgb(10, 10, 10);
+}
+
+// Tablet (Landscape Mode)
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  .rec-video {
+    span {
+      font-size: calc(0.9vw + 0.1rem);
+    }
+    .video-info h3 {
+      font-size: calc(1.1vw + 0.1rem);
+    }
+    .video-info h4 {
+      font-size: calc(0.9vw + 0.1rem);
+    }
+  }
+}
+
+// Tablet (Portrait Mode)
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .rec-video {
+    width: 49%;
+    padding: 1vw;
+    &:not(:last-of-type) {
+      margin-bottom: 3vw;
+    }
+    span {
+      top: 1.5vw;
+      left: 1.5vw;
+      font-size: calc(1.65vw + 0.1rem);
+      padding: 0.75vw 1vw;
+    }
+    .video-info h3 {
+      font-size: calc(2vw + 0.1rem);
+      margin-bottom: 0.6vw;
+    }
+    .video-info h4 {
+      font-size: calc(1.8vw + 0.1rem);
+    }
+  }
+}
+
+// Mobile (Landscape Mode)
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .rec-video {
+    width: 49%;
+    padding: 1vw;
+    &:not(:last-of-type) {
+      margin-bottom: 3vw;
+    }
+    span {
+      top: 1.5vw;
+      left: 1.5vw;
+      font-size: calc(1.5vw + 0.1rem);
+      padding: 0.75vw 1vw;
+    }
+    .video-info h3 {
+      font-size: calc(2vw + 0.1rem);
+      margin-bottom: 0.6vw;
+    }
+    .video-info h4 {
+      font-size: calc(1.6vw + 0.1rem);
+    }
+  }
+}
+
+// Mobile (Portrait Mode)
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .rec-video {
+    width: 49%;
+    padding: 1vw;
+    &:not(:last-of-type) {
+      margin-bottom: 3vw;
+    }
+    span {
+      top: 1.5vw;
+      left: 1.5vw;
+      font-size: calc(1.65vw + 0.1rem);
+      padding: 0.75vw 1vw;
+    }
+    .video-info h3 {
+      font-size: calc(2.25vw + 0.1rem);
+      margin-bottom: 0.6vw;
+    }
+    .video-info h4 {
+      font-size: calc(1.85vw + 0.1rem);
+    }
+  }
+}

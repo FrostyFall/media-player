@@ -1,0 +1,65 @@
+// Desktop and TV
+.trend-videos-container {
+  margin-bottom: 2.5vw;
+  h2 {
+    font-size: calc(1.5vw + 0.1rem) !important;
+  }
+}
+.trend-videos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1vw;
+}
+
+// Tablet (Landscape Mode)
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  .trend-videos-container h2 {
+    font-size: calc(1.75vw + 0.1rem) !important;
+  }
+}
+
+// Tablet (Portrait Mode)
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .trend-videos-container {
+    margin-top: 4.5vw;
+    padding-bottom: 14vw;
+  }
+  .trend-videos-container h2 {
+    font-size: calc(3.6vw + 0.1rem) !important;
+  }
+  .trend-videos {
+    flex-wrap: wrap;
+    margin-top: 2vw;
+  }
+}
+
+// Mobile (Landscape Mode)
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .trend-videos-container {
+    margin-top: 4.5vw;
+    margin-bottom: 10vw;
+  }
+  .trend-videos-container h2 {
+    font-size: calc(3vw + 0.1rem) !important;
+  }
+  .trend-videos {
+    flex-wrap: wrap;
+    margin-top: 2vw;
+  }
+}
+
+// Mobile (Portrait Mode)
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .trend-videos-container {
+    margin-top: 4.5vw;
+    margin-bottom: 20vw;
+  }
+  .trend-videos-container h2 {
+    font-size: calc(4vw + 0.1rem) !important;
+  }
+  .trend-videos {
+    flex-wrap: wrap;
+    margin-top: 2vw;
+  }
+}

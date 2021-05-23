@@ -1,0 +1,141 @@
+// Desktop and TV
+header .user {
+  background-color: var(--box-color);
+  display: flex;
+  height: 2.75vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+}
+
+header .user .avatar-container {
+  background-color: var(--box-color-secondary);
+  height: 100%;
+  width: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4vw 0.5vw;
+  border-top-left-radius: 0.5vw;
+  border-bottom-left-radius: 0.5vw;
+  .user-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .user-avatar.error {
+    background-color: #b60000;
+  }
+  .user-avatar.loading {
+    animation: pulse 2s forwards infinite;
+    @keyframes pulse {
+      0% {
+        background-color: darken(#a5a5a5, 25%);
+      }
+      50% {
+        background-color: lighten(#a5a5a5, 25%);
+      }
+      100% {
+        background-color: darken(#a5a5a5, 25%);
+      }
+    }
+  }
+}
+
+header .user .name-container {
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75vw;
+  font-size: calc(0.75vw + 0.1rem);
+}
+
+// Tablet (Landscape Mode)
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  header .user {
+    height: 3.5vw;
+  }
+
+  header .user .avatar-container {
+    min-width: 3.75vw;
+  }
+
+  header .user .name-container {
+    font-size: calc(0.85vw + 0.1rem);
+  }
+}
+
+// Tablet (Portrait Mode)
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  header .user.show {
+    display: flex;
+  }
+
+  header .user {
+    display: none;
+    height: 8vw;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  header .user .avatar-container {
+    width: 10vw;
+    padding: 1vw;
+    display: none;
+  }
+
+  header .user .name-container {
+    width: 100%;
+    font-size: calc(2.5vw + 0.1rem);
+  }
+}
+
+// Mobile (Landscape Mode)
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  header .user.show {
+    display: flex;
+  }
+
+  header .user {
+    display: none;
+    height: 5.5vw;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  header .user .avatar-container {
+    width: 10vw;
+    padding: 1vw;
+    display: none;
+  }
+
+  header .user .name-container {
+    width: 100%;
+    font-size: calc(1.75vw + 0.1rem);
+  }
+}
+
+// Mobile (Portrait Mode)
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  header .user.show {
+    display: flex;
+  }
+
+  header .user {
+    display: none;
+    height: 10vw;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  header .user .avatar-container {
+    width: 10vw;
+    padding: 1vw;
+    display: none;
+  }
+
+  header .user .name-container {
+    width: 100%;
+    font-size: calc(2.5vw + 0.1rem);
+  }
+}

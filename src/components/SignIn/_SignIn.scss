@@ -1,0 +1,293 @@
+// Desktop and TV
+section.sign-in-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+section.sign-in-container .singer-img {
+  width: 55%;
+}
+
+section.sign-in-container .sign-in-main {
+  width: 45%;
+}
+
+.singer-img {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+}
+
+.singer-img img {
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.sign-in-main h1 {
+  text-align: center;
+  color: var(--text-primary);
+  font-size: calc(1.25vw + 0.1rem);
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  padding-top: 1.5em;
+  & span {
+    color: var(--primary-color);
+  }
+}
+
+.sign-in-main {
+  position: relative;
+}
+
+.sign-in-form {
+  width: 65%;
+  margin: 0 auto;
+  padding: 1.75vw 2.5vw;
+  background-color: var(--box-color);
+  margin-top: 10vw;
+  border-radius: 0.5vw;
+  h2,
+  h3 {
+    text-align: center;
+  }
+  h2 {
+    font-size: calc(1.75vw + 0.1rem);
+    color: var(--text-primary);
+  }
+  h3 {
+    font-size: calc(0.9vw + 0.1rem);
+    color: var(--text-secondary);
+    margin: 0.4em 0 2em;
+    a {
+      color: var(--primary-color);
+    }
+  }
+  input[type="text"],
+  input[type="password"],
+  a[type="submit"] {
+    padding: 0.75em 2.5em;
+    margin-bottom: 1em;
+    border: none;
+    border-radius: 0.35vw;
+    width: 100%;
+    height: 2.75vw;
+    font-size: calc(0.8vw + 0.1rem);
+    color: var(--text-dark);
+    background-color: var(--box-color-secondary);
+    -webkit-appearance: none;
+  }
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+  }
+  input[type="text"]::placeholder,
+  input[type="password"]::placeholder {
+    color: var(--text-dark);
+    opacity: 1;
+  }
+  input[type="text"]::-ms-input-placeholder,
+  input[type="password"]::-ms-input-placeholder {
+    color: var(--text-dark);
+  }
+  a[type="submit"] {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 1vw;
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+    font-size: calc(0.9vw + 0.1rem);
+  }
+}
+
+// Tablet (Landscape Mode)
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  .sign-in-main h1 {
+    font-size: calc(1.5vw + 0.1rem);
+  }
+
+  .sign-in-form {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: 0 auto;
+    h2 {
+      font-size: calc(2.25vw + 0.1rem);
+    }
+    h3 {
+      font-size: calc(1.25vw + 0.1rem);
+      margin: 0.5em 0 2em;
+    }
+    input[type="text"],
+    input[type="password"],
+    a[type="submit"] {
+      padding: 0.9em 1.75em;
+      height: auto;
+      font-size: calc(1.25vw + 0.1rem);
+    }
+    a[type="submit"] {
+      font-size: calc(1.25vw + 0.1rem);
+    }
+  }
+}
+
+// Tablet (Portrait Mode)
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  section.sign-in-container {
+    display: block;
+    position: relative;
+  }
+
+  section.sign-in-container .singer-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .singer-img::after {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .sign-in-main {
+    position: static;
+  }
+
+  .sign-in-main h1 {
+    font-size: calc(3.25vw + 0.1rem);
+    padding-top: 0;
+    white-space: nowrap;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 15;
+  }
+
+  .sign-in-form {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+    padding: 4vw;
+    margin-top: 0;
+    h2 {
+      font-size: calc(3.75vw + 0.1rem);
+      padding: 0;
+    }
+    h3 {
+      font-size: calc(2.25vw + 0.1rem);
+      margin: 0.4em 0 1.5em;
+    }
+    input[type="text"],
+    input[type="password"],
+    a[type="submit"] {
+      padding: 0.65em 1.5em;
+      height: auto;
+      font-size: calc(2.5vw + 0.1rem);
+    }
+    a[type="submit"] {
+      margin: 2vw 0 0;
+    }
+  }
+}
+
+// Mobile (Landscape Mode)
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .sign-in-main h1 {
+    font-size: calc(1.5vw + 0.1rem);
+    padding-top: 1.25em;
+  }
+
+  .sign-in-form {
+    width: 80%;
+    margin-top: 9vw;
+    h2 {
+      font-size: calc(2.25vw + 0.1rem);
+    }
+    h3 {
+      font-size: calc(1.1vw + 0.1rem);
+      margin: 0.5em 0 2em;
+    }
+    input[type="text"],
+    input[type="password"],
+    a[type="submit"] {
+      padding: 0.9em 1.75em;
+      height: auto;
+      font-size: calc(1.1vw + 0.1rem);
+    }
+    a[type="submit"] {
+      font-size: calc(1.1vw + 0.1rem);
+    }
+  }
+}
+
+// Mobile (Portrait Mode)
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  section.sign-in-container {
+    display: block;
+    position: relative;
+  }
+
+  section.sign-in-container .singer-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .singer-img::after {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .sign-in-main {
+    position: static;
+  }
+
+  .sign-in-main h1 {
+    font-size: calc(4vw + 0.1rem);
+    padding-top: 0;
+    white-space: nowrap;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 15;
+  }
+
+  .sign-in-form {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+    width: 75%;
+    padding: 4vw;
+    margin-top: 0;
+    h2 {
+      font-size: calc(4.5vw + 0.1rem);
+    }
+    h3 {
+      font-size: calc(2.75vw + 0.1rem);
+      margin: 0.4em 0 1.5em;
+    }
+    input[type="text"],
+    input[type="password"],
+    a[type="submit"] {
+      padding: 0.65em 1.25em;
+      height: auto;
+      font-size: calc(3vw + 0.1rem);
+    }
+    a[type="submit"] {
+      margin: 2vw 0 0;
+    }
+  }
+}

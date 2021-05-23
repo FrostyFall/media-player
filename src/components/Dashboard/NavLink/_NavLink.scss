@@ -1,0 +1,141 @@
+// Desktop and TV
+aside .main-nav li,
+aside .my-music-nav li {
+  font-size: calc(0.85vw + 0.1rem);
+  font-weight: 400;
+  padding: 0.7em 0 0.7em 1em;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+aside .main-nav li.active,
+aside .my-music-nav li.active {
+  color: var(--text-btn-primary);
+  background-color: var(--primary-color);
+  border-radius: 0.5vw;
+}
+
+aside .main-nav li h3,
+aside .my-music-nav li h3 {
+  margin-left: 0.875em;
+}
+
+aside .main-nav img,
+aside .my-music-nav img {
+  width: 1em;
+  height: 1em;
+}
+
+// Tablet (Landscape Mode)
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  aside .main-nav li,
+  aside .my-music-nav li {
+    font-size: calc(1vw + 0.1rem);
+    width: 80%;
+  }
+
+  aside .main-nav img,
+  aside .my-music-nav img {
+    width: 1.05em;
+    height: 1.05em;
+  }
+}
+
+// Tablet (Portrait Mode)
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  aside .main-nav li {
+    width: 50%;
+  }
+
+  aside .my-music-nav li {
+    width: 100%;
+  }
+  aside .main-nav li,
+  aside .my-music-nav li {
+    text-align: center;
+    display: block;
+    font-size: calc(2.5vw + 0.1rem);
+    padding: 0.5em 0;
+    margin: 0;
+    color: var(--text-secondary);
+    background-color: var(--box-color);
+  }
+
+  aside .main-nav li h3,
+  aside .my-music-nav li h3 {
+    margin: 0;
+  }
+
+  aside .main-nav img,
+  aside .my-music-nav img {
+    display: none;
+  }
+}
+
+// Mobile (Landscape Mode)
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  aside .main-nav li {
+    width: 50%;
+  }
+
+  aside .my-music-nav li {
+    width: 100%;
+  }
+  aside .main-nav li,
+  aside .my-music-nav li {
+    text-align: center;
+    display: block;
+    font-size: calc(1.75vw + 0.1rem);
+    padding: 0.5em 0;
+    margin: 0;
+    color: var(--text-secondary);
+    background-color: var(--box-color);
+  }
+
+  aside .main-nav li h3,
+  aside .my-music-nav li h3 {
+    margin: 0;
+  }
+
+  aside .main-nav img,
+  aside .my-music-nav img {
+    display: none;
+  }
+}
+
+// Mobile (Portrait Mode)
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  aside .main-nav li {
+    width: 50%;
+  }
+
+  aside .my-music-nav li {
+    width: 100%;
+  }
+  aside .main-nav li,
+  aside .my-music-nav li {
+    text-align: center;
+    display: block;
+    font-size: calc(2.5vw + 0.1rem);
+    padding: 0.5em 0;
+    margin: 0;
+    color: var(--text-secondary);
+    background-color: var(--box-color);
+  }
+
+  aside .main-nav li h3,
+  aside .my-music-nav li h3 {
+    margin: 0;
+  }
+
+  aside .main-nav img,
+  aside .my-music-nav img {
+    display: none;
+  }
+}

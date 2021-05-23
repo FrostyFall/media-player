@@ -1,0 +1,39 @@
+// Lato Font-Family
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+// Reset
+@import "./reset";
+
+// Create Account component
+@import "./components/CreateAcc/CreateAcc";
+
+// Sing In component
+@import "./components/SignIn/SignIn";
+
+// Dashboard component
+@import "./components/Dashboard/AudioPlayer/AudioPlayer";
+@import "./components/Dashboard/Content/Content";
+@import "./components/Dashboard/FavoriteSong/FavSong";
+@import "./components/Dashboard/FavoriteSongs/FavSongs";
+@import "./components/Dashboard/FoundSong/FoundSong";
+@import "./components/Dashboard/Header/Header";
+@import "./components/Dashboard/Home/Home";
+@import "./components/Dashboard/Main/Main";
+@import "./components/Dashboard/NavLink/NavLink";
+@import "./components/Dashboard/NewReleases/NewReleases";
+@import "./components/Dashboard/NewSong/NewSong";
+@import "./components/Dashboard/PlayingVideo/PlayingVideo";
+@import "./components/Dashboard/RecommendedVideos/RecommendedVideos";
+@import "./components/Dashboard/RecVideo/RecVideo";
+@import "./components/Dashboard/SearchField/SearchField";
+@import "./components/Dashboard/SearchResults/SearchResults";
+@import "./components/Dashboard/Sidebar/Sidebar";
+@import "./components/Dashboard/TopHit/TopHit";
+@import "./components/Dashboard/TopHits/TopHits";
+@import "./components/Dashboard/TopVideo/TopVideo";
+@import "./components/Dashboard/TrendingVideos/TrendingVideos";
+@import "./components/Dashboard/TrendVideo/TrendVideo";
+@import "./components/Dashboard/User/User";
+@import "./components/Dashboard/UserMenu/UserMenu";
+@import "./components/Dashboard/CopyrightWarn/CopyrightWarn";
+@import "./components/Dashboard/SignOutWarn/SignOutWarn";

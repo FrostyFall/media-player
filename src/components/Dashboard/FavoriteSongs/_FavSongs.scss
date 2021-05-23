@@ -1,0 +1,182 @@
+// Desktop and TV
+section.content h2 {
+  font-size: calc(1.5vw + 0.1rem);
+  color: var(--text-primary);
+}
+
+section.content .fav-songs-container {
+  background-color: var(--box-color);
+  padding: 1.05vw 1.5vw;
+  border-radius: 0.5vw;
+  margin-top: 1.05vw;
+}
+
+section.content .fav-songs-container .flex {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .grid-nav {
+    font-size: calc(1vw + 0.1rem);
+    color: var(--text-dark);
+    display: grid;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    h3:not(:first-of-type) {
+      width: 22.5%;
+    }
+    h3:nth-child(5) {
+      width: 10.25%;
+    }
+    h3:first-of-type {
+      width: 4.25%;
+    }
+    h3:last-of-type {
+      width: 2.5%;
+    }
+  }
+  .grid-nav:hover {
+    cursor: default;
+  }
+  .grid-content {
+    font-size: calc(0.8vw + 0.1rem);
+    margin-top: 0.8vw;
+    color: var(--text-secondary);
+  }
+}
+
+// Tablet (Landscape Mode)
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  section.content h2 {
+    font-size: calc(1.75vw + 0.1rem);
+  }
+
+  section.content .fav-songs-container .flex {
+    .grid-nav {
+      font-size: calc(1.2vw + 0.1rem);
+      h3:not(:first-of-type) {
+        width: 28%;
+      }
+      h3:nth-child(5) {
+        display: none;
+      }
+      h3:first-of-type {
+        width: 5%;
+      }
+      h3:last-of-type {
+        width: 3.25%;
+      }
+    }
+    .grid-content {
+      font-size: calc(0.95vw + 0.1rem);
+    }
+  }
+}
+
+// Tablet (Portrait Mode)
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  section.content h2 {
+    font-size: calc(3.6vw + 0.1rem);
+  }
+
+  section.content .fav-songs-container {
+    padding: 0 2vw;
+    margin-top: 2vw;
+  }
+
+  section.content .fav-songs-container .flex {
+    .grid-nav {
+      font-size: calc(2.25vw + 0.1rem);
+      margin-top: 2vw;
+      h3:not(:first-of-type) {
+        width: 28%;
+      }
+      h3:nth-child(5) {
+        display: none;
+      }
+      h3:first-of-type {
+        width: 5%;
+      }
+      h3:last-of-type {
+        width: 3.25%;
+      }
+    }
+    .grid-content {
+      font-size: calc(1.8vw + 0.1rem);
+      margin-top: 0;
+    }
+  }
+}
+
+// Mobile (Landscape Mode)
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  section.content h2 {
+    font-size: calc(3vw + 0.1rem);
+  }
+
+  section.content .fav-songs-container {
+    padding: 0 2vw;
+    margin-top: 2vw;
+    margin-bottom: 10vw;
+  }
+
+  section.content .fav-songs-container .flex {
+    .grid-nav {
+      font-size: calc(2vw + 0.1rem);
+      margin-top: 2vw;
+      h3:not(:first-of-type) {
+        width: 28%;
+      }
+      h3:nth-child(5) {
+        display: none;
+      }
+      h3:first-of-type {
+        width: 5%;
+      }
+      h3:last-of-type {
+        width: 3.25%;
+      }
+    }
+    .grid-content {
+      font-size: calc(1.5vw + 0.1rem);
+      margin-top: 0;
+    }
+  }
+}
+
+// Mobile (Portrait Mode)
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  section.content h2 {
+    font-size: calc(4vw + 0.1rem);
+  }
+
+  section.content .fav-songs-container {
+    padding: 0 2vw;
+    margin-top: 2vw;
+    margin-bottom: 20vw;
+  }
+
+  section.content .fav-songs-container .flex {
+    .grid-nav {
+      font-size: calc(2vw + 0.1rem);
+      margin-top: 2vw;
+      h3:not(:first-of-type) {
+        width: 28%;
+      }
+      h3:nth-child(5) {
+        display: none;
+      }
+      h3:first-of-type {
+        width: 5%;
+      }
+      h3:last-of-type {
+        width: 3.25%;
+      }
+    }
+    .grid-content {
+      font-size: calc(1.6vw + 0.1rem);
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "allSongs": [
+    {
+      "id": 1,
+      "artist": "OneRepublic",
+      "name": "Rescue Me",
+      "album": "Rescue Me Single",
+      "imgURL": "./assets/images/OneRepublic - Rescue Me.jpg",
+      "songURL": "./assets/music/public-domain-1.mp3"
+    },
+    {
+      "id": 2,
+      "artist": "Taylor Swift",
+      "name": "ME!",
+      "album": "Lover",
+      "imgURL": "./assets/images/Taylor Swift - ME!.jpg",
+      "songURL": "./assets/music/public-domain-2.mp3"
+    },
+    {
+      "id": 3,
+      "artist": "Miike Snow",
+      "name": "Genghis Khan",
+      "album": "iii",
+      "imgURL": "./assets/images/Miike Snow - Genghis Khan.jpg",
+      "songURL": "./assets/music/public-domain-3.mp3"
+    },
+    {
+      "id": 4,
+      "artist": "The Weeknd",
+      "name": "Blinding Lights",
+      "album": "Blinding Lights",
+      "imgURL": "./assets/images/The Weeknd - Blinding Lights.jpg",
+      "songURL": "./assets/music/public-domain-4.mp3"
+    },
+    {
+      "id": 5,
+      "artist": "The Killers",
+      "name": "The Man",
+      "album": "Wonderful Wonderful",
+      "imgURL": "./assets/images/The Killers - The Man.jpg",
+      "songURL": "./assets/music/public-domain-5.mp3"
+    },
+    {
+      "id": 6,
+      "artist": "The Chain Gang of 1974",
+      "name": "Bends",
+      "album": "Honey Moon Drips",
+      "imgURL": "./assets/images/The Chain Gang of 1974 - Bends.jpg",
+      "songURL": "./assets/music/public-domain-6.mp3"
+    },
+    {
+      "id": 7,
+      "artist": "Capital Cities",
+      "name": "Safe and Sound",
+      "album": "In a Tidal Wave of Mystery",
+      "imgURL": "./assets/images/Capital Cities - Safe and Sound.jpg",
+      "songURL": "./assets/music/public-domain-7.mp3"
+    },
+    {
+      "id": 8,
+      "artist": "Young the Giant",
+      "name": "Superposition",
+      "album": "Mirror Master",
+      "imgURL": "./assets/images/Young the Giant - Superposition.jpg",
+      "songURL": "./assets/music/public-domain-8.mp3"
+    },
+    {
+      "id": 9,
+      "artist": "Panic! At The Disco",
+      "name": "Into the Unknown",
+      "album": "Frozen 2 (Original Soundtrack)",
+      "imgURL": "./assets/images/Panic! At The Disco - Into the Unknown.jpg",
+      "songURL": "./assets/music/public-domain-9.mp3"
+    },
+    {
+      "id": 10,
+      "artist": "Maroon 5",
+      "name": "Cold",
+      "album": "Cold (feat. Future) - Single",
+      "imgURL": "./assets/images/Maroon 5 - Cold.jpg",
+      "songURL": "./assets/music/public-domain-10.mp3"
+    }
+  ],
+
+  "recommendedVideos": [
+    {
+      "id": 1,
+      "artist": "The Weeknd",
+      "title": "Blinding Lights",
+      "imgURL": "./assets/images/videos_covers/The Weeknd - Blinding Lights.jpg",
+      "videoURL": "./assets/videos/public-domain-1.mp4",
+      "views": "10,531",
+      "duration": "00:10"
+    },
+    {
+      "id": 2,
+      "artist": "Capital Cities",
+      "title": "Safe and Sound",
+      "imgURL": "./assets/images/videos_covers/Capital Cities - Safe and Sound.jpg",
+      "videoURL": "./assets/videos/public-domain-2.mp4",
+      "views": "9,203",
+      "duration": "00:36"
+    },
+    {
+      "id": 3,
+      "artist": "Maroon 5",
+      "title": "Cold",
+      "imgURL": "./assets/images/videos_covers/Maroon 5 - Cold.jpg",
+      "videoURL": "./assets/videos/public-domain-3.mp4",
+      "views": "11,856",
+      "duration": "00:37"
+    }
+  ],
+
+  "trendingVideos": [
+    {
+      "id": 1,
+      "artist": "The Chain Gang of 1974",
+      "title": "Forget",
+      "imgURL": "./assets/images/videos_covers/The Chain Gang of 1974 - Forget.jpg",
+      "videoURL": "./assets/videos/public-domain-4.mp4",
+      "views": "15,924",
+      "duration": "00:15"
+    },
+    {
+      "id": 2,
+      "artist": "Miike Snow",
+      "title": "Genghis Khan",
+      "imgURL": "./assets/images/videos_covers/Miike Snow - Genghis Khan.jpg",
+      "videoURL": "./assets/videos/public-domain-5.mp4",
+      "views": "13,534",
+      "duration": "00:37"
+    },
+    {
+      "id": 3,
+      "artist": "Taylor Swift",
+      "title": "ME!",
+      "imgURL": "./assets/images/videos_covers/Taylor Swift - ME!.jpg",
+      "videoURL": "./assets/videos/public-domain-6.mp4",
+      "views": "16,776",
+      "duration": "00:52"
+    }
+  ],
+
+  "newReleases": [
+    {
+      "id": 1,
+      "artist": "OneRepublic",
+      "name": "Rescue Me",
+      "album": "Rescue Me Single",
+      "imgURL": "./assets/images/OneRepublic - Rescue Me.jpg",
+      "songURL": "./assets/music/public-domain-1.mp3"
+    },
+    {
+      "id": 2,
+      "artist": "Taylor Swift",
+      "name": "ME!",
+      "album": "Lover",
+      "imgURL": "./assets/images/Taylor Swift - ME!.jpg",
+      "songURL": "./assets/music/public-domain-2.mp3"
+    },
+    {
+      "id": 3,
+      "artist": "Miike Snow",
+      "name": "Genghis Khan",
+      "album": "iii",
+      "imgURL": "./assets/images/Miike Snow - Genghis Khan.jpg",
+      "songURL": "./assets/music/public-domain-3.mp3"
+    },
+    {
+      "id": 4,
+      "artist": "The Weeknd",
+      "name": "Blinding Lights",
+      "album": "Blinding Lights",
+      "imgURL": "./assets/images/The Weeknd - Blinding Lights.jpg",
+      "songURL": "./assets/music/public-domain-4.mp3"
+    },
+    {
+      "id": 5,
+      "artist": "The Killers",
+      "name": "The Man",
+      "album": "Wonderful Wonderful",
+      "imgURL": "./assets/images/The Killers - The Man.jpg",
+      "songURL": "./assets/music/public-domain-5.mp3"
+    }
+  ],
+
+  "topHits": [
+    {
+      "id": 1,
+      "artist": "OneRepublic",
+      "name": "Rescue Me",
+      "album": "Rescue Me Single",
+      "imgURL": "./assets/images/OneRepublic - Rescue Me.jpg",
+      "songURL": "./assets/music/public-domain-1.mp3"
+    },
+    {
+      "id": 2,
+      "artist": "Miike Snow",
+      "name": "Genghis Khan",
+      "album": "iii",
+      "imgURL": "./assets/images/Miike Snow - Genghis Khan.jpg",
+      "songURL": "./assets/music/public-domain-3.mp3"
+    },
+    {
+      "id": 3,
+      "artist": "The Killers",
+      "name": "The Man",
+      "album": "Wonderful Wonderful",
+      "imgURL": "./assets/images/The Killers - The Man.jpg",
+      "songURL": "./assets/music/public-domain-5.mp3"
+    },
+    {
+      "id": 4,
+      "artist": "Capital Cities",
+      "name": "Safe and Sound",
+      "album": "In a Tidal Wave of Mystery",
+      "imgURL": "./assets/images/Capital Cities - Safe and Sound.jpg",
+      "songURL": "./assets/music/public-domain-7.mp3"
+    },
+    {
+      "id": 5,
+      "artist": "Young the Giant",
+      "name": "Superposition",
+      "album": "Mirror Master",
+      "imgURL": "./assets/images/Young the Giant - Superposition.jpg",
+      "songURL": "./assets/music/public-domain-8.mp3"
+    },
+    {
+      "id": 6,
+      "artist": "Panic! At The Disco",
+      "name": "Into the Unknown",
+      "album": "Frozen 2 (Original Soundtrack)",
+      "imgURL": "./assets/images/Panic! At The Disco - Into the Unknown.jpg",
+      "songURL": "./assets/music/public-domain-9.mp3"
+    }
+  ],
+
+  "topVideo": [
+    {
+      "id": 1,
+      "artist": "The Chain Gang of 1974",
+      "title": "Forget",
+      "imgURL": "./assets/images/videos_covers/The Chain Gang of 1974 - Forget.jpg",
+      "videoURL": "./assets/videos/public-domain-1.mp4",
+      "views": "15,924",
+      "duration": "05:15"
+    }
+  ],
+
+  "users": [
+    {
+      "userFirstName": "Johnny",
+      "userLastName": "Johnson",
+      "userAvatar": "./assets/icons/general/user-avatar.svg",
+      "favoriteSongs": [
+        {
+          "id": 1,
+          "artist": "Panic! At The Disco",
+          "name": "Into the Unknown",
+          "album": "Frozen 2 (Original Soundtrack)",
+          "imgURL": "./assets/images/Panic! At The Disco - Into the Unknown.jpg",
+          "songURL": "./assets/music/public-domain-9.mp3",
+          "addedDate": "2018-01-20"
+        },
+        {
+          "id": 2,
+          "artist": "Miike Snow",
+          "name": "Genghis Khan",
+          "album": "iii",
+          "imgURL": "./assets/images/Miike Snow - Genghis Khan.jpg",
+          "songURL": "./assets/music/public-domain-3.mp3",
+          "addedDate": "2020-12-05"
+        },
+        {
+          "id": 3,
+          "artist": "The Killers",
+          "name": "The Man",
+          "album": "Wonderful Wonderful",
+          "imgURL": "./assets/images/The Killers - The Man.jpg",
+          "songURL": "./assets/music/public-domain-5.mp3",
+          "addedDate": "2019-04-23"
+        },
+        {
+          "id": 4,
+          "artist": "The Chain Gang of 1974",
+          "name": "Bends",
+          "album": "Honey Moon Drips",
+          "imgURL": "./assets/images/The Chain Gang of 1974 - Bends.jpg",
+          "songURL": "./assets/music/public-domain-6.mp3",
+          "addedDate": "2015-11-14"
+        }
+      ]
+    }
+  ]
+}
